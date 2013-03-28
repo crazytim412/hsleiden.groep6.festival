@@ -17,103 +17,156 @@
         android:layout_alignParentTop="true"
         android:text="Zoek" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout1"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:layout_below="@+id/button1"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/rectangle"
-        android:orientation="vertical" >
+  	<RelativeLayout
+  	    android:id="@+id/relativeLayout1"
+  	    android:layout_width="match_parent"
+  	    android:layout_height="65dp"
+		android:layout_below="@+id/button1" 
+		android:layout_marginTop="5dp"
+		android:background="@drawable/rectangle" >
+		
+		<ImageButton
+		    android:id="@+id/imageButton4"
+		    android:layout_width="match_parent" 
+		    android:layout_height="65dp"
+		    android:layout_alignParentLeft="true" 
+		    android:layout_alignParentTop="true" 
+		    android:src="@drawable/rectangle"  />
+		
+		<ImageView
+		    android:id="@+id/imageView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentTop="true"
+		    android:layout_margin="10dp"
+		    android:src="@drawable/ic_launcher" />
+		
+		<TextView
+		    android:id="@+id/textView5"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/textView6"
+		    android:layout_below="@+id/textView6"
+		    android:text="Naam Evenement" />
+		   
+		<TextView
+		    android:id="@+id/textView6"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/imageView5"
+		    android:layout_toRightOf="@+id/imageView1"
+		    android:layout_marginTop="2dp"
+		    android:text="Datum Evenement" />		
+		
+	</RelativeLayout>
+	
+  	<RelativeLayout
+		    android:id="@+id/relativeLayout2"
+		    android:layout_width="match_parent"
+		    android:layout_height="65dp"
+		    android:layout_alignRight="@+id/button1"
+		    android:layout_below="@+id/relativeLayout1"
+		    android:layout_marginTop="5dp"
+		    android:background="@drawable/rectangle" >
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:text="Naam evenement" />
+		    <ImageButton
+		        android:id="@+id/imageButton4"
+		        android:layout_width="match_parent"
+		        android:layout_height="65dp"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:src="@drawable/rectangle" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="2dp"
-            android:text="Datum evenement" />
+		    <ImageView
+		        android:id="@+id/imageView1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:layout_margin="10dp"
+		        android:src="@drawable/ic_launcher" />
 
-        <ImageButton
-            android:id="@+id/imageButton1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="-37dp"
-            android:src="@drawable/ic_launcher" />
-    </LinearLayout>
+		    <TextView
+		        android:id="@+id/textView5"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/textView6"
+		        android:layout_below="@+id/textView6"
+		        android:text="Naam Evenement" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:layout_alignLeft="@+id/linearLayout1"
-        android:layout_below="@+id/linearLayout1"
-        android:layout_marginTop="5dp"
-        android:background="@drawable/rectangle"
-        android:orientation="vertical" >
+		    <TextView
+		        android:id="@+id/textView6"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/imageView5"
+		        android:layout_marginTop="2dp"
+		        android:layout_toRightOf="@+id/imageView1"
+		        android:text="Datum Evenement" />
+		</RelativeLayout>
+		
+  		<RelativeLayout
+		    android:id="@+id/relativeLayout3"
+		    android:layout_width="match_parent"
+		    android:layout_height="65dp"
+		    android:layout_alignRight="@+id/button1"
+		    android:layout_below="@+id/relativeLayout2"
+		    android:layout_marginTop="5dp"
+		    android:background="@drawable/rectangle" >
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:text="Naam evenement" />
+		    <ImageButton
+		        android:id="@+id/imageButton4"
+		        android:layout_width="match_parent"
+		        android:layout_height="65dp"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:src="@drawable/rectangle" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="2dp"
-            android:text="Datum evenement" />
+		    <ImageView
+		        android:id="@+id/imageView1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:layout_margin="10dp"
+		        android:src="@drawable/ic_launcher" />
 
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="-37dp"
-            android:src="@drawable/ic_launcher" />
-    </LinearLayout>
+		    <TextView
+		        android:id="@+id/textView5"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/textView6"
+		        android:layout_below="@+id/textView6"
+		        android:text="Naam Evenement" />
 
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:src="@drawable/help"/>
+		    <TextView
+		        android:id="@+id/textView6"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/imageView5"
+		        android:layout_marginTop="2dp"
+		        android:layout_toRightOf="@+id/imageView1"
+		        android:text="Datum Evenement" />
+		</RelativeLayout>
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageButton3"
-        android:layout_centerHorizontal="true"
-        android:background="#FFFFFF"
-        android:text="Zoekveld"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+		<ImageButton
+   		 	android:id="@+id/imageButton3"
+			android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true" 
+		    android:layout_alignParentTop="true" 
+		    android:src="@drawable/help"	/>
+		
+		<TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="150dp"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBottom="@+id/imageButton3"
+		    android:layout_centerHorizontal="true"
+		    android:background="#FFFFFF"
+		    android:text="Zoekveld"
+		    android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <ScrollView
-        android:id="@+id/scrollView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="84dp"
-        android:layout_marginLeft="30dp" >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical" >
-        </LinearLayout>
-    </ScrollView>
-
-</RelativeLayout>
+		
+		
+</RelativeLayout>		
